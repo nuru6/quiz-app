@@ -92,6 +92,7 @@ let showQuizFunc = () => {
 let checkAns = x => {
     clearInterval(secInterval);
     clearInterval(pBarInterval);
+    x.classList.remove('hover');
     let ans = x.textContent,
         correctAns = questions[quizCount].qAnswer,
         optionLen = optionsDiv.children.length;
