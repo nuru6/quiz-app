@@ -83,7 +83,7 @@ let showQuizFunc = () => {
         quizQuestion = qNum + '. ' + qQuestion;
     question.innerHTML = quizQuestion;
     // Show Options;
-    let options = '<div class="option" onclick="checkAns(this)">' + questions[quizCount].qOptions[0] + '</div>' + '<div class="option" onclick="checkAns(this)">' + questions[quizCount].qOptions[1] + '</div>' + '<div class="option" onclick="checkAns(this)">' + questions[quizCount].qOptions[2] + '</div>' + '<div class="option" onclick="checkAns(this)">' + questions[quizCount].qOptions[3] + '</div>';
+    let options = '<div class="option hover" onclick="checkAns(this)">' + questions[quizCount].qOptions[0] + '</div>' + '<div class="option hover" onclick="checkAns(this)">' + questions[quizCount].qOptions[1] + '</div>' + '<div class="option hover" onclick="checkAns(this)">' + questions[quizCount].qOptions[2] + '</div>' + '<div class="option hover" onclick="checkAns(this)">' + questions[quizCount].qOptions[3] + '</div>';
     optionsDiv.innerHTML = options;
     // Current Quiz No;
     quizCounter.textContent = qNum + ' out of ' + questions.length;
