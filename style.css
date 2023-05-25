@@ -139,7 +139,7 @@ li {
     transition: background-color .3s;
 }
 
-.option:hover {
+.hover:hover {
     background-color: #0DCAF0;
 }
 
