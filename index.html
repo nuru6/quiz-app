@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icon CDN -->
+    <script src="https://kit.fontawesome.com/3b84f22a45.js" crossorigin="anonymous"></script>
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Home Page -->
+        <div class="homePage">
+            <img src="img/question.svg" alt="Quiz App">
+            <div class="homeText">
+                <h3>Quiz App with fixed time</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quas voluptatum porro nihil incidunt. Officiis modi inventore quo.</p>
+                <h3>Quiz App with fixed time</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vitae!</p>
+            </div>
+            <button class="btn btnR">Start Quiz</button>
+        </div>
+        <!-- Home Page End -->
+        <!-- Rules Page -->
+        <div class="rulesPage d-none">
+            <h3>Some Rules of this Quiz</h3>
+            <ol>
+                <li>You will have only <span class="text-info">15 seconds</span> per each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option once time goes off.</li>
+                <li>You can't exit from the Quiz while you're playing.</li>
+                <li>You'll get points on the basis of your correct answers.</li>
+            </ol>
+            <button class="btn btnL">Exit Quiz</button>
+            <button class="btn btnR">Continue</button>
+        </div>
+        <!-- Rules Page End -->
+        <!-- Quiz Page -->
+        <div class="quizPage d-none">
+            <div class="quizHeader">
+                <h4>Start Quiz</h4>
+                <p class="quizStatus">
+                    <span class="timeStatus"></span>
+                    <span class="timeCounter"></span>
+                </p>
+                <div class="timeLine">
+                    <div class="pBar"></div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="quizBody">
+                <h2 class="question"></h2>
+                <div class="options"></div>
+            </div>
+            <!--  -->
+            <div class="quizFooter">
+                <p class="quizCounter"></p>
+            </div>
+            <!--  -->
+            <button class="btn btnR">Next Que</button>
+        </div>
+        <!-- Quiz Page End -->
+        <div class="resultPage d-none">
+            <div class="img">
+                <img src="img/winner.svg" alt="Quiz App">
+            </div>
+            <!--  -->
+            <div class="result">
+                <p>You have finished the Quiz</p>
+                <p class="resultMsg"></p>
+            </div>
+            <!--  -->
+            <button class="btn btnL">Exit Quiz</button>
+            <button class="btn btnR">Replay</button>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="js/question.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
